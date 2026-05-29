@@ -2,38 +2,38 @@
     font-family: 'Trebuchet MS';
     font-style: normal;
     font-weight: normal;
-    src: local('Trebuchet MS'), url('/fonts/trebuc.woff') format('woff');
+    src: local('Trebuchet MS'), url('../fonts/trebuc.woff') format('woff');
 }
 @font-face {
     font-family: 'Trebuchet MS Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Trebuchet MS Italic'), url('/fonts/Trebuchet-MS-Italic.woff') format('woff');
+    src: local('Trebuchet MS Italic'), url('../fonts/Trebuchet-MS-Italic.woff') format('woff');
 }
 @font-face {
     font-family: 'Trebuchet MS Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Trebuchet MS Bold'), url('/fonts/Trebuchet-MS-Bold.woff') format('woff');
+    src: local('Trebuchet MS Bold'), url('../fonts/Trebuchet-MS-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Titillium Web';
     font-style: normal;
     font-weight: normal;
-    src: local('Titillium Web'), url('/fonts/TitilliumWeb-Regular.woff2') format('woff2');
+    src: local('Titillium Web'), url('../fonts/TitilliumWeb-Regular.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Titillium Web Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Titillium Web Italic'), url('/fonts/TitilliumWeb-Italic.woff2') format('woff2');
+    src: local('Titillium Web Italic'), url('../fonts/TitilliumWeb-Italic.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Titillium Web Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Titillium Web Bold'), url('/fonts/TitilliumWeb-Bold.woff2') format('woff2');
+    src: local('Titillium Web Bold'), url('../fonts/TitilliumWeb-Bold.woff2') format('woff2');
 }
 
 body {
