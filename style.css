@@ -2,25 +2,194 @@
     font-family: 'Trebuchet MS';
     font-style: normal;
     font-weight: normal;
-    src: local('Trebuchet MS'), url('fonts/trebuc.woff') format('woff');
+    src: local('Trebuchet MS'), url('/fonts/trebuc.woff') format('woff');
 }
-    
-
 @font-face {
     font-family: 'Trebuchet MS Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Trebuchet MS Italic'), url('fonts/Trebuchet-MS-Italic.woff') format('woff');
+    src: local('Trebuchet MS Italic'), url('/fonts/Trebuchet-MS-Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Trebuchet MS Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Trebuchet MS Bold'), url('/fonts/Trebuchet-MS-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Titillium Web'), url('/fonts/TitilliumWeb-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Titillium Web Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Titillium Web Italic'), url('/fonts/TitilliumWeb-Italic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Titillium Web Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Titillium Web Bold'), url('/fonts/TitilliumWeb-Bold.woff2') format('woff2');
 }
 
 body {
-    font-family: 'Trebuchet MS';
+    font-family: 'Titillium Web';
+    background: black;
+    color: white;
+    background-image: linear-gradient(#2f2f2f, #000000);
 }
 
 .titlebar {
-  background: black;
-  border-bottom: 2px solid white;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
+    background: black;
+    border: 4px solid white;
+    padding: 10px 20px;
+}
+
+.titlebar-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    word-spacing: normal;
+    cursor: pointer;
+}
+
+.titlebar-nav a:hover {
+    color: yellow;
+    font-family: 'Titillium Web Italic';
+}
+
+.hover-text {
+    transition: color 0s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+.hover-text:hover {
+    color: yellow;
+    font-family: 'Titillium Web Italic';
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 24px 16px;
+    margin-top: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    background-color: black;
+    border: 5px solid white;
+    width: 256px;
+    height: 256px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    font-family: 'Titillium Web Bold';
+    color: white;
+    transition: color 0s ease;
+    text-wrap: balance;
+}
+
+.credit-caption {
+    font-family: 'Titillium Web Bold';
+    color: white;
+    transition: color 0s ease;
+    max-width: 256px;
+    text-align: center;
+}
+
+.chart-caption {
+    font-family: 'Titillium Web';
+    color: white;
+    transition: color 0s ease;
+    max-height: 20%;
+    max-width: 35%;
+    font-size: 75%;
+}
+
+.chart {
+    position: relative;
+    height: 20%;
+    width: 35%;
+    border: 6px solid white;
+    background-color: black;
+}
+
+.left {
+    display: flex;
+    gap: 20px;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.paragraph p {
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #333333;
+    min-height: 100vh;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.center-box {
+    width: 80%;
+    max-width: 600px;
+    aspect-ratio: 16 / 9;
+    background-color: #000000;
+    border: 4px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+.center-line {
+    border-left: 2px solid white;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+}
+
+.hide {
+    opacity: 0; /*Use hide class to hide divs temporarily*/
+}
+
+.paragraph-gradient-border {
+    box-shadow: 0 0 50px 50px #191919;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #191919;
+    min-height: 100vh;
+    font-size: 150%;
 }
